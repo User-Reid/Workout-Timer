@@ -44,15 +44,13 @@ function App() {
     ];
   }, [partOfDay]);
 
-  // useEffect(function () {
-  //   const id = setInterval(function () {
-  //     setTime(formatTime(new Date()));
-  //   }, 1000);
+  useEffect(function () {
+    const id = setInterval(function () {
+      setTime(formatTime(new Date()));
+    }, 1000);
 
-  //   return () => clearInterval(id);
-  // }, []);
-
-  // test test
+    return () => clearInterval(id);
+  }, []);
 
   return (
     <main>
